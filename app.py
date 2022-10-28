@@ -69,3 +69,6 @@ def scraping():
     # d =json.dumps(x, indent=2)
     d2 =json.dumps(data, indent=4)
     return make_response(jsonify(d2), 200)
+
+if __name__ == '__main__':
+    app.run( host = os.environ.get('FLASK_IP'))
